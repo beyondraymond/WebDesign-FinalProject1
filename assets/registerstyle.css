@@ -9,7 +9,7 @@
     min-height: 100%;
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.1), 
-    rgba(0,0,0,0.1)), url(./assets/wallpaper3.jpg);
+    rgba(0,0,0,0.1)), url(../assets/wallpaper3.jpg);
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -95,6 +95,9 @@
     border: 0;
     outline: none;
     border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px #3333;
 }
 
 .check-box{
