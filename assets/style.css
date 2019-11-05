@@ -299,3 +299,160 @@ body{
     text-align: center;
   }
 
+/*Pink Footer*/
+.footer-main-div{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #eb7373;
+    padding: 20px 0px;
+    box-shadow: 0 0px 3px rgba(0,0, 50, 0.5);
+    margin-top: 30px;
+}
+
+.footer-social-icons{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.footer-social-icons ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.footer-social-icons ul li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+    border-radius: 100%;
+    background: #f5f6fc;
+}
+
+.footer-social-icons ul li a{
+    color: #eb7373;
+    font-size: 25px;
+}
+
+.footer-social-icons ul li a i{
+    line-height: 50px;
+}
+
+.footer-menu-one{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.footer-menu-one ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.footer-menu-one ul li{
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+.footer-menu-one ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #f5f6fc;
+    text-transform: uppercase;
+}
+
+.footer-menu-smaller{
+    margin-top: 15px;
+}
+
+/*White Footer for Homepage*/
+.white-footer{
+    background: #f5f6fc;
+    margin-top: 0px;
+}
+
+.white-footer .footer-social-icons ul li{
+    background: #eb7373;
+}
+
+.white-footer .footer-social-icons ul li a{
+    color: #f5f6fc;
+}
+
+.white-footer .footer-menu-one ul li a{
+    color: #eb7373;
+}
+
+.team-section{
+    overflow: hidden;
+    text-align: center;
+    background: #eb7373;
+    padding: 60px;
+}
+
+.team-section h1{
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    color: #f5f6fc;
+    font-size: 40px;
+}
+
+.border{
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 3px;
+    background: #f5f6fc;
+    margin-bottom: 40px;
+}
+
+.ps{
+    margin-bottom: 40px;
+}
+
+.ps a{
+    display: inline-block;
+    margin: 0 30px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+}
+
+.ps a img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.4s all;
+    border-radius: 50%;
+}
+
+.ps a:hover img{
+    filter: none;
+}
+
+.section{
+    width: 600px;
+    margin: auto;
+    font-size: 20px;
+    color: #f5f6fc;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+}
+
+.section:target{
+    height: auto;
+    
+}
+
+.name{
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+}
