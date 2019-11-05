@@ -48,7 +48,7 @@
     position: absolute;
     width: 110px;
     height: 100%;
-    background: #ffdaf4;
+    background: linear-gradient(to right, #ff105f, #ffad06);
     border-radius: 30px;
     transition: .5s;
 }
