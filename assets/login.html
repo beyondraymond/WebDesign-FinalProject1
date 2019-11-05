@@ -1,116 +1,114 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <title>Login or Sign up!</title>
-    <br><br><br><br><br><br><br><br><br>
-    <style>
-    html {
-        background: url(wallpaper4.jpg) no-repeat center fixed; 
-        background-size: cover;
+    <title>Welcome Back Beautiful!</title>
+
+    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+      <section class="header">
+          <!--NavBar-->
+          <nav class="navbar navbar-expand-lg navbar-light">
+                  <a class="navbar-brand" href="../index.html"> <img src="../assets/pamperLogo2.png" alt=""></a>
+
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                          <i class="fa fa-bars"></i>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="../assets/signup.html">SIGN UP</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../assets/login.html">LOG IN</a>
+                      </li>
+                      <li class="nav-item">
+                              <a class="nav-link" href="#" title="Add to Cart"><i class="fa fa-shopping-bag"></i></a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            BROWSE
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../assets/Serums.html">Serum</a>
+                            <a class="dropdown-item" href="../assets/Face Masks.html">Face Masks</a>
+                            <a class="dropdown-item" href="../assets/Toner.html">Toner</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../assets/All Products.html">All Products</a>
+                          </div>
+                        </li>
+                    </ul>
+
+                    <ul class="right-menu ml-auto">
+                        <li><i class="fa fa-facebook"></i></li>
+                        <li><i class="fa fa-instagram"></i></li>
+                        <li><i class="fa fa-pinterest"></i></li>
+                        <li>
+                          <div class="input-group mb-3">
+                                  <input type="text" class="form-control" placeholder="SEARCH">
+                                  <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fa fa-search"></i></span>
+                                  </div>
+                                </div>
+                        </li>
+                    </ul>
+                  </div>
+                </nav>
+  </section>
+
+    <div class="hero">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+
+        <div class="social-icons">
+            <img src="./assets/fb.png" alt="">
+            <img src="./assets/tw.png" alt="">
+            <img src="./assets/gp.png" alt="">
+        </div>
+
+        <form id="login" class="userData-group">
+          <input type="text" class="userData-field" placeholder="Username" required>
+          <input type="text" class="userData-field" placeholder="Password" required>
+          <input type="checkbox" class="check-box"><span>Remember Password</span>
+          <button type="submit" class="submit-btn">LOGIN</button>
+        </form>
+
+        <form id="register" class="userData-group">
+          <input type="text" class="userData-field" placeholder="Username" required>
+          <input type="email" class="userData-field" placeholder="Email Address" required>
+          <input type="text" class="userData-field" placeholder="Password" required>
+          <input type="checkbox" class="check-box"><span>I agree to the terms and condtions</span>
+          <button type="submit" class="submit-btn">Register</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      var loginVar = document.getElementById("login");
+      var registerVar = document.getElementById("register");
+      var btnVar = document.getElementById("btn");
+
+      function register(){
+        loginVar.style.left = "-400px";
+        registerVar.style.left = "50px";
+        btnVar.style.left = "110px";
       }
-     
 
-     input[type=text], input[type=password] {
-  width: 30%;
-  padding: 12px 20px;
-  margin: 4px 20px;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing:border-box;
-}
-
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 8px 10px;
-  margin: 6px 0;
-  border:outset;
-  cursor: pointer;
-  width: 15%;
-  height: 10%;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-.cancelbtn {
-  background-color: #f44336;
-}
-
-
-.container {
-  padding: 15px;
-  opacity: 0.8;
-  background-color: #F589A6;
-}
-
-
-
-
-
-      div {
-          width: 35%;
-          
-    font-family:'Segoe UI';
-    font-size: 10pt; 
-    text-shadow: 3px 3px 5px #154660;
-  border: 4px #267A65;
-  background-color:#D32151;
-  padding-top: 50px;
-  padding-right: 10px;
-  padding-bottom: 30px;
-  padding-left: 20px;
-  opacity:0.8;
- 
-
-}
-
-
-@keyframes example {
-  from {background-color: rgb(26, 56, 49);}
-
-}
-
-</style>
-
-</head>
-<body>
-   <center>
-          
-<div><font size="15pt" color="white">Login or Sign up</font>
-<br><br>
-<font size="3pt" color="white"> New here? 
-<a href="./signup.html" style="color: white ">Sign up!</a>
-</font></div> 
-
-
-
-  <div class="container">
-    <label for="uname"><font size="3pt" color="white"><b>Username</b></font></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-  <br>  <label for="psw"><font size="3pt" color="white"><b>Password</b></font></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-        <label>
-        <br> <input type="checkbox" checked="checked" name="remember"> <font color="black">Remember me</font>
-        <br>
-        <br>
-        </label>
-        <label>
-            <p style="text-align: center;"><a href="#" style="color:black">Forgot password?</a></p>
-            <p><a href="../index.html" style="color:black"> Go back to homepage</a></p>
-            <br>
-            <br>
-        </label>
-        <button type="button" class="btn btn-login"><a href="../index.html" style="color:black">Login</a></button>
-        <button type="button" class="cancelbtn"><center>Cancel</center></button>
-        
-  </div>
-
-  
-</form>
-</center> 
-
-</body>
+      function login(){
+        loginVar.style.left = "50px";
+        registerVar.style.left = "450px";
+        btnVar.style.left = "0px";
+      }
+    </script>
+  </body>
 </html>
